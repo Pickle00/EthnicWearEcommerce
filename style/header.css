@@ -1,0 +1,197 @@
+.announcement {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+.announcement-socials .socials {
+  list-style: none;
+  display: flex;
+}
+
+.announcement .socials li,
+i {
+  padding: 0px 5px;
+  color: white;
+}
+
+header {
+  font-family: "Rubik";
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  padding: 0px 50px;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 99;
+  height: 70px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-left,
+.section-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo {
+  max-width: 60px;
+}
+
+header .nav-shop ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-shop ul li {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0px 20px;
+}
+
+.nav-shop ul li:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.486);
+}
+
+.nav-shop ul a li .active {
+  background-color: green;
+  color: white;
+}
+
+.nav-shop ul a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.active {
+  background-color: rgb(39, 187, 39);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-shop a li:active {
+  background-color: rgb(39, 187, 39);
+  color: white;
+}
+
+.form-search {
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: rgba(211, 211, 211, 0.486);
+}
+
+.form-search input {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Rubik";
+  background-color: transparent;
+  border: none;
+}
+
+.form-search button {
+  border: none;
+  height: 100%;
+  width: 80px;
+  background-color: transparent;
+}
+
+.form-search button i {
+  color: black;
+  font-size: 15px;
+}
+
+.form-search button :hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.form-search input[type="text"] {
+  outline: none;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+}
+
+header .right a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  height: 40px;
+  margin: auto 10px;
+  background-color: transparent;
+}
+
+header .right a i {
+  color: black;
+  font-size: 15px;
+}
+
+header .right .no-of-products {
+  position: relative;
+  top: -8px;
+  right: 12px;
+  font-size: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-weight: bold;
+  min-width: 18px;
+  text-align: center;
+}
+
+.right a:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.486);
+}
+
+.section-right .search-results {
+  position: absolute;
+  top: 60px;
+  padding: 10px;
+  display: none;
+  right: 340px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  width: 437px;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  color: black;
+  margin: 5px 0px;
+  padding: 0px 5px;
+  width: 100%;
+}
+
+.product-link :hover.search-item {
+  background-color: lightgrey;
+}
+
+.search-item img {
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+}

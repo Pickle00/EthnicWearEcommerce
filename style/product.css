@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito";
+  margin: 0;
+}
+
+html,
+body {
+  height: auto;
+}
+
+.headin {
+  width: 80%;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 60px;
+  margin: auto;
+}
+
+.product-card {
+  width: 330px;
+  border-radius: 8px;
+  margin: 10px 0px;
+  height: 600px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  text-decoration: none;
+  transform: scale(1.03);
+}
+
+.product-card:hover img{
+    filter: brightness(0.7); 
+
+}
+.product-card .product-image {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  margin: 0px 0px;
+  color: #333;
+  padding: 0px 10px;
+}
+
+.product-card p {
+    padding: 0px 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.price-rating {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.price-rating span {
+  font-weight: bold;
+  color: #333;
+}
+
+main .product-card button {
+  background-color: white;
+  text-align: center;
+  align-items: end;
+  color: black;
+  border: none;
+  padding: 8px;
+  width: 130px;
+  border-radius: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+  align-self: center;
+}
+
+.product-card button:hover {
+  background-color: black;
+  color: white;
+}
